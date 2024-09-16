@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "bKLR2NkfCQpcceWuNHI8w2zB0zdAopJhHjpw6unsQnUO9UW/RsFBErNINP1lfQFO0Y6AZxKx6GcEE4pk5w5jRg==",
+  "dgSpecHash": "BWeHggqiRUfMcCOC0G8P2jBmvdsycvYciZpxO1p8sSn7L/De/yAPljHIsOAqkMONhQDLZYeKIcF/2RaXQ1ZwCw==",
   "success": true,
-  "projectFilePath": "D:\\Programming_Stuff\\Web\\WebAppGurkhas\\GurkhasWebApp\\GurkhasWebApp.Client\\GurkhasWebApp.Client.csproj",
+  "projectFilePath": "D:\\Programming_Stuff\\Web\\WebAppGurkhas\\WebAppGurkhas\\GurkhasWebApp\\GurkhasWebApp.Client\\GurkhasWebApp.Client.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\user\\.nuget\\packages\\microsoft.aspnetcore.authorization\\8.0.4\\microsoft.aspnetcore.authorization.8.0.4.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.aspnetcore.components\\8.0.4\\microsoft.aspnetcore.components.8.0.4.nupkg.sha512",

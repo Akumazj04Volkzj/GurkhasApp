@@ -1335,11 +1335,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Programming_Stuff\\Web\\WebAppGurkhas\\GurkhasWebApp\\GurkhasWebApp\\GurkhasWebApp.csproj",
+      "projectUniqueName": "D:\\Programming_Stuff\\Web\\WebAppGurkhas\\WebAppGurkhas\\GurkhasWebApp\\GurkhasWebApp\\GurkhasWebApp.csproj",
       "projectName": "GurkhasWebApp",
-      "projectPath": "D:\\Programming_Stuff\\Web\\WebAppGurkhas\\GurkhasWebApp\\GurkhasWebApp\\GurkhasWebApp.csproj",
+      "projectPath": "D:\\Programming_Stuff\\Web\\WebAppGurkhas\\WebAppGurkhas\\GurkhasWebApp\\GurkhasWebApp\\GurkhasWebApp.csproj",
       "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "D:\\Programming_Stuff\\Web\\WebAppGurkhas\\GurkhasWebApp\\GurkhasWebApp\\obj\\",
+      "outputPath": "D:\\Programming_Stuff\\Web\\WebAppGurkhas\\WebAppGurkhas\\GurkhasWebApp\\GurkhasWebApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -1360,8 +1360,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\Programming_Stuff\\Web\\WebAppGurkhas\\GurkhasWebApp\\GurkhasWebApp.Client\\GurkhasWebApp.Client.csproj": {
-              "projectPath": "D:\\Programming_Stuff\\Web\\WebAppGurkhas\\GurkhasWebApp\\GurkhasWebApp.Client\\GurkhasWebApp.Client.csproj"
+            "D:\\Programming_Stuff\\Web\\WebAppGurkhas\\WebAppGurkhas\\GurkhasWebApp\\GurkhasWebApp.Client\\GurkhasWebApp.Client.csproj": {
+              "projectPath": "D:\\Programming_Stuff\\Web\\WebAppGurkhas\\WebAppGurkhas\\GurkhasWebApp\\GurkhasWebApp.Client\\GurkhasWebApp.Client.csproj"
             }
           }
         }

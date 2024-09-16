@@ -9,43 +9,43 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = GurkhasWebApp
 build_property.RootNamespace = GurkhasWebApp
-build_property.ProjectDir = D:\Programming_Stuff\Web\WebAppGurkhas\GurkhasWebApp\GurkhasWebApp\
+build_property.ProjectDir = D:\Programming_Stuff\Web\WebAppGurkhas\WebAppGurkhas\GurkhasWebApp\GurkhasWebApp\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\Programming_Stuff\Web\WebAppGurkhas\GurkhasWebApp\GurkhasWebApp
+build_property.MSBuildProjectDirectory = D:\Programming_Stuff\Web\WebAppGurkhas\WebAppGurkhas\GurkhasWebApp\GurkhasWebApp
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/Programming_Stuff/Web/WebAppGurkhas/GurkhasWebApp/GurkhasWebApp/Components/App.razor]
+[D:/Programming_Stuff/Web/WebAppGurkhas/WebAppGurkhas/GurkhasWebApp/GurkhasWebApp/Components/App.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBcHAucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Programming_Stuff/Web/WebAppGurkhas/GurkhasWebApp/GurkhasWebApp/Components/Pages/Error.razor]
+[D:/Programming_Stuff/Web/WebAppGurkhas/WebAppGurkhas/GurkhasWebApp/GurkhasWebApp/Components/Pages/Error.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFcnJvci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Programming_Stuff/Web/WebAppGurkhas/GurkhasWebApp/GurkhasWebApp/Components/Pages/Home.razor]
+[D:/Programming_Stuff/Web/WebAppGurkhas/WebAppGurkhas/GurkhasWebApp/GurkhasWebApp/Components/Pages/Home.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xIb21lLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Programming_Stuff/Web/WebAppGurkhas/GurkhasWebApp/GurkhasWebApp/Components/Pages/Weather.razor]
+[D:/Programming_Stuff/Web/WebAppGurkhas/WebAppGurkhas/GurkhasWebApp/GurkhasWebApp/Components/Pages/Weather.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xXZWF0aGVyLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Programming_Stuff/Web/WebAppGurkhas/GurkhasWebApp/GurkhasWebApp/Components/Routes.razor]
+[D:/Programming_Stuff/Web/WebAppGurkhas/WebAppGurkhas/GurkhasWebApp/GurkhasWebApp/Components/Routes.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xSb3V0ZXMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Programming_Stuff/Web/WebAppGurkhas/GurkhasWebApp/GurkhasWebApp/Components/_Imports.razor]
+[D:/Programming_Stuff/Web/WebAppGurkhas/WebAppGurkhas/GurkhasWebApp/GurkhasWebApp/Components/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xfSW1wb3J0cy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Programming_Stuff/Web/WebAppGurkhas/GurkhasWebApp/GurkhasWebApp/Components/Layout/MainLayout.razor]
+[D:/Programming_Stuff/Web/WebAppGurkhas/WebAppGurkhas/GurkhasWebApp/GurkhasWebApp/Components/Layout/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTWFpbkxheW91dC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-bfq6k81deo
 
-[D:/Programming_Stuff/Web/WebAppGurkhas/GurkhasWebApp/GurkhasWebApp/Components/Layout/NavMenu.razor]
+[D:/Programming_Stuff/Web/WebAppGurkhas/WebAppGurkhas/GurkhasWebApp/GurkhasWebApp/Components/Layout/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTmF2TWVudS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-vz9k0tlqmm
