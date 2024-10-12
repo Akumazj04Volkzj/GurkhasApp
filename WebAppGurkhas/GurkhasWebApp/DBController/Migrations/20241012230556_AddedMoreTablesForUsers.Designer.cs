@@ -4,6 +4,7 @@ using DBController;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DBController.Migrations
 {
     [DbContext(typeof(DBControllerCtx))]
-    partial class DBControllerCtxModelSnapshot : ModelSnapshot
+    [Migration("20241012230556_AddedMoreTablesForUsers")]
+    partial class AddedMoreTablesForUsers
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -40,26 +43,6 @@ namespace DBController.Migrations
                     b.HasKey("Role_Id");
 
                     b.ToTable("TeamRoles");
-
-                    b.HasData(
-                        new
-                        {
-                            Role_Id = 1,
-                            Role_Level = 1,
-                            Role_Name = "Leader"
-                        },
-                        new
-                        {
-                            Role_Id = 2,
-                            Role_Level = 2,
-                            Role_Name = "SubLeader"
-                        },
-                        new
-                        {
-                            Role_Id = 3,
-                            Role_Level = 3,
-                            Role_Name = "Member"
-                        });
                 });
 
             modelBuilder.Entity("DBController.Models.Teams", b =>
@@ -108,32 +91,6 @@ namespace DBController.Migrations
                     b.HasKey("Role_Id");
 
                     b.ToTable("UtilizRoles");
-
-                    b.HasData(
-                        new
-                        {
-                            Role_Id = 1,
-                            Role_Level = 1,
-                            Role_Name = "Admin"
-                        },
-                        new
-                        {
-                            Role_Id = 2,
-                            Role_Level = 2,
-                            Role_Name = "Advanced User"
-                        },
-                        new
-                        {
-                            Role_Id = 3,
-                            Role_Level = 3,
-                            Role_Name = "User"
-                        },
-                        new
-                        {
-                            Role_Id = 4,
-                            Role_Level = 4,
-                            Role_Name = "Restricted Group"
-                        });
                 });
 
             modelBuilder.Entity("DBController.Models.UserTeamRole", b =>
@@ -254,7 +211,7 @@ namespace DBController.Migrations
                         .IsRequired();
 
                     b.HasOne("DBController.Models.Users", "User")
-                        .WithMany("User_UserRoles")
+                        .WithMany()
                         .HasForeignKey("User_Id")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -283,8 +240,6 @@ namespace DBController.Migrations
                 {
                     b.Navigation("UserTeamRole")
                         .IsRequired();
-
-                    b.Navigation("User_UserRoles");
                 });
 #pragma warning restore 612, 618
         }
