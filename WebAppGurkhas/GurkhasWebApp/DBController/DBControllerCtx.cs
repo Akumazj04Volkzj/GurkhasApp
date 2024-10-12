@@ -15,9 +15,9 @@ namespace DBController
         public DbSet<Users> Users { get; set; }
         public DbSet<Teams> Teams { get; set; }
         public DbSet<TeamRoles> TeamRoles { get; set; }
-        public DbSet<UserTeamRole> UserRoles { get; set; }
-        public DbSet<UserRoles> UtilizRoles { get; set; }
-        public DbSet<User_UserRoles> Utiliz_UtilizRoles { get; set; }
+        public DbSet<UserTeamRole> UserTeamRole { get; set; }
+        public DbSet<UserRoles> UserRoles { get; set; }
+        public DbSet<User_UserRoles> User_UserRoles { get; set; }
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -63,9 +63,9 @@ namespace DBController
             // Configuração da entidade TeamRoles
             modelBuilder.Entity<TeamRoles>(entity =>
             {
-                entity.HasKey(e => e.Role_Id);
+                entity.HasKey(e => e.TeamRole_Id);
 
-                entity.Property(e => e.Role_Name)
+                entity.Property(e => e.TeamRole_Name)
                     .IsRequired();
             });
 
@@ -90,10 +90,13 @@ namespace DBController
             // Configuração da entidade UserRoles
             modelBuilder.Entity<UserRoles>(entity =>
             {
-                entity.HasKey(e => e.Role_Id);
+                entity.HasKey(e => e.UserRole_Id);  // Define o Role_Id como chave primária
 
-                entity.Property(e => e.Role_Name)
-                    .IsRequired();
+                entity.Property(e => e.UserRole_Name)
+                    .IsRequired();  // Define Role_Name como um campo obrigatório
+
+                //entity.Property(e => e.UserRole_Level)
+                //    .IsRequired();  // Define Role_Level como um campo obrigatório
             });
 
             // Configuração da entidade User_UserRoles
@@ -115,17 +118,17 @@ namespace DBController
             // Seeding Database
             // Adicionar dados iniciais para UserRoles
             modelBuilder.Entity<UserRoles>().HasData(
-                new UserRoles { Role_Id = 1, Role_Name = "Admin", Role_Level = UserRoleLevel.Admin },
-                new UserRoles { Role_Id = 2, Role_Name = "Advanced User", Role_Level = UserRoleLevel.AdvancedUser },
-                new UserRoles { Role_Id = 3, Role_Name = "User", Role_Level = UserRoleLevel.User },
-                new UserRoles { Role_Id = 4, Role_Name = "Restricted Group", Role_Level = UserRoleLevel.RestrictedGroup }
+                new UserRoles { UserRole_Id = 1, UserRole_Name = "Admin", UserRole_Level = UserRoleLevel.Admin },
+                new UserRoles { UserRole_Id = 2, UserRole_Name = "Advanced User", UserRole_Level = UserRoleLevel.AdvancedUser },
+                new UserRoles { UserRole_Id = 3, UserRole_Name = "User", UserRole_Level = UserRoleLevel.User },
+                new UserRoles { UserRole_Id = 4, UserRole_Name = "Restricted Group", UserRole_Level = UserRoleLevel.RestrictedGroup }
             );
 
             // Adicionar dados iniciais para TeamRoles
             modelBuilder.Entity<TeamRoles>().HasData(
-                new TeamRoles { Role_Id = 1, Role_Name = "Leader", Role_Level = TeamRoleLevel.Leader },
-                new TeamRoles { Role_Id = 2, Role_Name = "SubLeader", Role_Level = TeamRoleLevel.SubLeader },
-                new TeamRoles { Role_Id = 3, Role_Name = "Member", Role_Level = TeamRoleLevel.Member }
+                new TeamRoles { TeamRole_Id = 1, TeamRole_Name = "Leader", TeamRole_Level = TeamRoleLevel.Leader },
+                new TeamRoles { TeamRole_Id = 2, TeamRole_Name = "SubLeader", TeamRole_Level = TeamRoleLevel.SubLeader },
+                new TeamRoles { TeamRole_Id = 3, TeamRole_Name = "Member", TeamRole_Level = TeamRoleLevel.Member }
             );
         }
 

@@ -24,41 +24,41 @@ namespace DBController.Migrations
 
             modelBuilder.Entity("DBController.Models.TeamRoles", b =>
                 {
-                    b.Property<int>("Role_Id")
+                    b.Property<int>("TeamRole_Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Role_Id"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("TeamRole_Id"));
 
-                    b.Property<int>("Role_Level")
+                    b.Property<int>("TeamRole_Level")
                         .HasColumnType("int");
 
-                    b.Property<string>("Role_Name")
+                    b.Property<string>("TeamRole_Name")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("Role_Id");
+                    b.HasKey("TeamRole_Id");
 
                     b.ToTable("TeamRoles");
 
                     b.HasData(
                         new
                         {
-                            Role_Id = 1,
-                            Role_Level = 1,
-                            Role_Name = "Leader"
+                            TeamRole_Id = 1,
+                            TeamRole_Level = 1,
+                            TeamRole_Name = "Leader"
                         },
                         new
                         {
-                            Role_Id = 2,
-                            Role_Level = 2,
-                            Role_Name = "SubLeader"
+                            TeamRole_Id = 2,
+                            TeamRole_Level = 2,
+                            TeamRole_Name = "SubLeader"
                         },
                         new
                         {
-                            Role_Id = 3,
-                            Role_Level = 3,
-                            Role_Name = "Member"
+                            TeamRole_Id = 3,
+                            TeamRole_Level = 3,
+                            TeamRole_Name = "Member"
                         });
                 });
 
@@ -92,47 +92,47 @@ namespace DBController.Migrations
 
             modelBuilder.Entity("DBController.Models.UserRoles", b =>
                 {
-                    b.Property<int>("Role_Id")
+                    b.Property<int>("UserRole_Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Role_Id"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("UserRole_Id"));
 
-                    b.Property<int>("Role_Level")
+                    b.Property<int>("UserRole_Level")
                         .HasColumnType("int");
 
-                    b.Property<string>("Role_Name")
+                    b.Property<string>("UserRole_Name")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("Role_Id");
+                    b.HasKey("UserRole_Id");
 
-                    b.ToTable("UtilizRoles");
+                    b.ToTable("UserRoles");
 
                     b.HasData(
                         new
                         {
-                            Role_Id = 1,
-                            Role_Level = 1,
-                            Role_Name = "Admin"
+                            UserRole_Id = 1,
+                            UserRole_Level = 1,
+                            UserRole_Name = "Admin"
                         },
                         new
                         {
-                            Role_Id = 2,
-                            Role_Level = 2,
-                            Role_Name = "Advanced User"
+                            UserRole_Id = 2,
+                            UserRole_Level = 2,
+                            UserRole_Name = "Advanced User"
                         },
                         new
                         {
-                            Role_Id = 3,
-                            Role_Level = 3,
-                            Role_Name = "User"
+                            UserRole_Id = 3,
+                            UserRole_Level = 3,
+                            UserRole_Name = "User"
                         },
                         new
                         {
-                            Role_Id = 4,
-                            Role_Level = 4,
-                            Role_Name = "Restricted Group"
+                            UserRole_Id = 4,
+                            UserRole_Level = 4,
+                            UserRole_Name = "Restricted Group"
                         });
                 });
 
@@ -162,7 +162,7 @@ namespace DBController.Migrations
                     b.HasIndex("User_Id")
                         .IsUnique();
 
-                    b.ToTable("UserRoles");
+                    b.ToTable("UserTeamRole");
                 });
 
             modelBuilder.Entity("DBController.Models.User_UserRoles", b =>
@@ -185,7 +185,7 @@ namespace DBController.Migrations
 
                     b.HasIndex("User_Id");
 
-                    b.ToTable("Utiliz_UtilizRoles");
+                    b.ToTable("User_UserRoles");
                 });
 
             modelBuilder.Entity("DBController.Models.Users", b =>

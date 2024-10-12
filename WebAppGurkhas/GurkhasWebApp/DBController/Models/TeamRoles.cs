@@ -11,12 +11,12 @@ namespace DBController.Models
     public class TeamRoles
     {
         [Key]
-        public int Role_Id { get; set; }  // ID único e sequencial
+        public int TeamRole_Id { get; set; }  // ID único e sequencial
 
         [Required]
-        public string Role_Name { get; set; }  // Nome do role
+        public string TeamRole_Name { get; set; }  // Nome do role
 
         [Required]
-        public TeamRoleLevel Role_Level { get; set; }  // Enum para o nível do role
+        public TeamRoleLevel TeamRole_Level { get; set; }  // Enum para o nível do role
     }
 }

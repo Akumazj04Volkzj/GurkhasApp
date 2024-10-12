@@ -10,12 +10,12 @@ namespace DBController.Models
     public class UserRoles
     {
         [Key]
-        public int Role_Id { get; set; }  // ID único e sequencial
+        public int UserRole_Id { get; set; }  // ID único e sequencial
 
         [Required]
-        public string Role_Name { get; set; }  // Nome do role (ex: "Admin", "User")
+        public string UserRole_Name { get; set; }  // Nome do role (ex: "Admin", "User")
 
         [Required]
-        public UserRoleLevel Role_Level { get; set; }  // Enum para o nível do role
+        public UserRoleLevel UserRole_Level { get; set; }  // Enum para o nível do role
     }
 }

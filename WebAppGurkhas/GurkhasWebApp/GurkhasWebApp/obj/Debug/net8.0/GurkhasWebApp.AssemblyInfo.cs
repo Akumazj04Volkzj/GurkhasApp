@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GurkhasWebApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+59b331481c44cceaca71d04d8b3720d1ab5dd734")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+744a73515f75075637bf668e9c319c128bac23fd")]
 [assembly: System.Reflection.AssemblyProductAttribute("GurkhasWebApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GurkhasWebApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
