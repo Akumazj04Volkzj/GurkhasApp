@@ -18,5 +18,8 @@ namespace DBController.Models
         [Phone]
         public string? Team_Phone { get; set; }  // Contacto telefónico (nullable)
         public byte[]? Team_Logo { get; set; }  // Logotipo (BLOB, nullable)
+
+        // Propriedade de navegação para os usuários da equipe
+        public ICollection<Users> Users { get; set; } = new List<Users>();
     }
 }
